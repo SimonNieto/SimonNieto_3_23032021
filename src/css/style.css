@@ -49,9 +49,12 @@ body {
 }
 .containeurResto {
   padding: 1rem;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 12rem 12rem 12rem 12rem;
 }
 .articleResto {
-  width: 150px;
   height: 150px;
   border: 2px solid rgb(96, 139, 168);
   border-radius: 5px;
