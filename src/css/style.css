@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.headerNav {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.LocalisationResto {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+
+.searchResto {
+  text-align: center;
+  padding: 1rem 1rem 4rem 1rem;
+  background-color: rgb(220, 219, 219);
+}
+
+.textSearch h1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.IconeLocalisation {
+  margin: 1rem;
+}
+
+.containeurLoca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Fonctionnement {
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Fonctionnement h2 {
+  width: 100%;
+}
+
+.buttonFct {
+  margin: 10px;
+}
+.containeurResto {
+  padding: 1rem;
+}
+.articleResto {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+}
+
+.footer {
+  background-color: #1b1919;
+}
+
+.logoFooter {
+  color: rgb(247, 247, 252);
+  font-style: italic;
+  margin-top: 0;
+}
+
+.containeurFooter {
+  padding: 1rem;
+}
+.containeurFooter a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnFooter p {
+  margin: 5px;
+}
