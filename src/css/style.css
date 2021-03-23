@@ -59,10 +59,29 @@ body {
   border-radius: 5px;
   background-color: rgba(96, 139, 168, 0.2);
 }
-
-.articleResto {
+.articleCard {
+  height: 75%;
 }
-
+.articleCardImg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.articleCardWrapimg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cardDesc {
+  position: relative;
+  height: 25%;
+}
+.cardDesc h5,
+p {
+  margin: 0;
+}
 .footer {
   background-color: #1b1919;
 }
