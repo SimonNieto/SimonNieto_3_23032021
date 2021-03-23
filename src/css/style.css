@@ -54,11 +54,13 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 12rem 12rem 12rem 12rem;
 }
-.articleResto {
-  height: 150px;
+.containeurResto a {
   border: 2px solid rgb(96, 139, 168);
   border-radius: 5px;
   background-color: rgba(96, 139, 168, 0.2);
+}
+
+.articleResto {
 }
 
 .footer {
