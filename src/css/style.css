@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 a {
   color: inherit;
@@ -8,8 +9,10 @@ a {
 
 .headerNav {
   text-align: center;
+}
+.headerLogo {
   margin-bottom: 10px;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 .LocalisationResto {
   display: flex;
@@ -22,10 +25,17 @@ a {
   padding: 1rem 1rem 4rem 1rem;
   background-color: rgb(220, 219, 219);
 }
-
+.buttonBtn {
+  padding-top: 2rem;
+}
+.buttonSearch {
+  padding: 16px 16px;
+  background-color: #df6fdb;
+}
 .textSearch h1 {
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 1.5em;
 }
 
 .IconeLocalisation {
@@ -47,9 +57,23 @@ a {
 .Fonctionnement h2 {
   width: 100%;
 }
-
+.containeurFct {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .buttonFct {
-  margin: 10px;
+  margin-bottom: 10px;
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  box-shadow: 0.25rem 0.25rem 0.5rem #00000020;
+  border-radius: 1.25rem;
+}
+
+.buttonIcn {
+  padding: 1rem;
 }
 .containeurResto {
   padding: 1rem;
@@ -59,9 +83,10 @@ a {
   grid-template-rows: auto 12rem 12rem 12rem 12rem;
 }
 .containeurResto a {
-  border: 2px solid rgb(96, 139, 168);
-  border-radius: 5px;
-  background-color: rgba(96, 139, 168, 0.2);
+  border-radius: 1rem;
+}
+.restoSct {
+  background-color: #f6f6f6;
 }
 .articleCard {
   height: 75%;
@@ -71,6 +96,7 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 .articleCardWrapimg {
   position: relative;
@@ -79,11 +105,11 @@ a {
   justify-content: flex-start;
 }
 .cardDesc {
+  background-color: #ffffff;
   position: relative;
   height: 25%;
 }
-.cardDesc h5,
-p {
+.cardDesc h5 {
   margin: 0;
 }
 .footer {
@@ -108,4 +134,32 @@ p {
 
 .btnFooter p {
   margin: 5px;
+}
+
+.containeurHeaderMenu {
+  display: flex;
+  justify-content: space-between;
+}
+.containeurMenu {
+  display: grid;
+}
+
+.headerImg {
+  object-fit: cover;
+  width: 100%;
+  max-height: 30rem;
+}
+
+.chxMenu {
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
+
+.mainMenu {
+  background-color: #f6f6f6;
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem;
+  padding-top: 0;
+  position: relative;
 }
