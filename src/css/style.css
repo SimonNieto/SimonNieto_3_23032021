@@ -1,7 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap";
-/* .articleCard {
-  height: 75%;
-} */
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -199,6 +196,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .menuMain__icn {
   color: black;
@@ -210,11 +208,21 @@ a {
 .menuMain__icn--purple {
   color: purple;
   position: absolute;
-  opacity: 0;
 }
-.menuMain__icn--purple:hover {
+.menuMain__icn--purple:hover::before {
+  transform: scale(1.1);
   opacity: 1;
-  transition-duration: 0.5s;
+}
+.menuMain__icn--purple::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s linear;
+  transform-origin: center 58%;
 }
 
 .menuChx {
@@ -257,6 +265,18 @@ a {
 }
 .menuChx:hover .menuChx__valide {
   margin-right: -1rem;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
