@@ -179,8 +179,6 @@ a {
   padding: 1rem 2rem 0 1rem;
   text-align: center;
 }
-.headerMenuIcn {
-}
 
 .containeurMenu {
   display: grid;
@@ -212,7 +210,10 @@ a {
   display: flex;
   align-items: flex-end;
 }
-
+.chxMenuBlock {
+  display: flex;
+  justify-content: space-between;
+}
 .chxMenuValid {
   align-items: center;
   display: flex;
@@ -220,6 +221,7 @@ a {
   width: 4rem;
   justify-content: center;
 }
+
 .mainMenu {
   background-color: #f6f6f6;
   margin-top: -4rem;

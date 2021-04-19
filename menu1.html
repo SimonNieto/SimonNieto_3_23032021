@@ -1,121 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/7fa8c37fe8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <a href="./index.html">
-            <div class="headerNav">
-                <img class="headerLogo" src="./src/logo/ohmyfood@2x.svg" alt="">
+            <div class="header">
+                <img class="header__Logo" src="./src/logo/ohmyfood@2x.svg" alt="">
             </div>
         </a>
-        
+
 
     </header>
-    <img class="headerImg" src="./src/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-    <main class="mainMenu">
-    <header class="containeurHeaderMenu">
-        <h2>A la francaise</h2>
-        <button>
-            <i class="fa-2x fa-heart far" aria-hidden="true"></i>
-        </button>
-        
-    </header>
-    <div class="containeurMenu">
-        <section class="menuOne">
-            <h3>ENTREES</h3>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                   <h4 class="chxMenuDescTitle">Tartare de poulpe acidulé</h4>
-                <p class="chxMenuDescP">Aux zestes d'orange</p> 
-                </div>
-                
-                <p class="chxMenuP">25€</p>
+    <img class="header__img" src="./src/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+    <main class="menuMain">
+        <header class="menuMain__header">
+            <h2>A la francaise</h2>
+            <button class="menuMain__btn">
+                <i class="fa-2x fa-heart far menuMain__icn" aria-hidden="true"></i>
+                <i class="fa-2x fa-heart fas menuMain__icn--purple" aria-hidden="true"></i>
+            </button>
+
+        </header>
+        <div class="menuMain__ctn">
+            <section>
+                <h3>ENTREES</h3>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Tartare de poulpe acidulé</h4>
+                        <p class="menuChx__subtitle">Aux zestes d'orange</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">25€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Velouté de légumes d'antan</h4>
+                        <p class="menuChx__subtitle">Carotte, panais, topinambour</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">35€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Soupe à l'oignon</h4>
+                        <p class="menuChx__subtitle">Revisitée</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">20€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
             </section>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                    <h4 class="chxMenuDescTitle">Velouté de légumes d'antan</h4>
-                <p class="chxMenuDescP">Carotte, panais, topinambour</p>
-                </div>
-                
-                <p class="chxMenuP">35€</p>
+            <section>
+                <h3>PLATS</h3>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Coquilles Saint-Jacques</h4>
+                        <p class="menuChx__subtitle">Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">40€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Magret de canard</h4>
+                        <p class="menuChx__subtitle">Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">35€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Pigeonneau d’Ille-et-Vilaine</h4>
+                        <p class="menuChx__subtitle">Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">44€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
             </section>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                    <h4 class="chxMenuDescTitle">Soupe à l'oignon</h4>
-                <p class="chxMenuDescP">Revisitée</p>
-                </div>
-                
-                <p class="chxMenuP">20€</p>
+            <section>
+                <h3>DESSERTS</h3>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Accompagnés de leur crème à la truffe</h4>
+                        <p class="menuChx__subtitle">Accompagnés de leur crème à la truffe</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">18€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Fondant au chocolat</h4>
+                        <p class="menuChx__subtitle">Revisité</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">22€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="menuChx">
+                    <div class="menuChx__desc">
+                        <h4 class="menuChx__title">Millefeuille croustillant</h4>
+                        <p class="menuChx__subtitle">Myrtilles et pâte d’amande</p>
+                    </div>
+                    <div class="menuChx__ctn">
+                        <div class="menuChx__price">23€</div>
+                        <div class="menuChx__valide">
+                            <i class="fa-check fas menuChx__icn" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </section>
+
             </section>
-        </section>
-        <section class="menuTwo">
-            <h3>PLATS</h3>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                    <h4 class="chxMenuDescTitle">Coquilles Saint-Jacques</h4>
-                <p class="chxMenuDescP">Accompagnées d'une purée de panais</p>
-                </div>
-                
-                <p class="chxMenuP">40€</p>
-            </section>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                  <h4 class="chxMenuDescTitle">Magret de canard</h4>
-                <p class="chxMenuDescP">Et parmentier de pommes de terre</p>  
-                </div>
-                
-                <p class="chxMenuP">35€</p>
-            </section>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                   <h4 class="chxMenuDescTitle">Pigeonneau d’Ille-et-Vilaine</h4>
-                <p class="chxMenuDescP">Sur son lit de gnocchis aux légumes</p> 
-                </div>
-                
-                <p class="chxMenuP">44€</p>
-            </section>
-        </section>
-        <section class="menuThree">
-            <h3>DESSERTS</h3>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                    <h4 class="chxMenuDescTitle">Accompagnés de leur crème à la truffe</h4>
-                <p class="chxMenuDescP">Accompagnés de leur crème à la truffe</p>
-                </div>
-                
-                <p class="chxMenuP">18€</p>
-            </section>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                   <h4 class="chxMenuDescTitle">Fondant au chocolat</h4>
-                <p class="chxMenuDescP">Revisité</p> 
-                </div>
-                
-                <p class="chxMenuP">22€</p>
-            </section>
-            <section class="chxMenu">
-                <div class="chxMenuDesc">
-                    <h4 class="chxMenuDescTitle">Millefeuille croustillant</h4>
-                <p class="chxMenuDescP">Myrtilles et pâte d’amande</p>
-                </div>
-                
-                <p class="chxMenuP">23€</p>
-            </section>
-        
-        </section>
-    </div>
+        </div>
     </main>
 
     <footer class="footer">
-        <div class="containeurFooter">
-            <p class="logoFooter">ohmyfood</p>
-            <a class="btnFooter" href="">
+        <div class="footer__ctn">
+            <p class="footer__logo">ohmyfood</p>
+            <a class="footer__btn" href="">
                 <p>Proposer un restaurant</p>
                 <p>Devenir partenaire</p>
                 <p>Mentions légales</p>
@@ -125,4 +173,5 @@
 
     </footer>
 </body>
+
 </html>
