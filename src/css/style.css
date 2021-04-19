@@ -202,9 +202,6 @@ a {
   color: black;
   position: absolute;
 }
-.menuMain__icn:hover {
-  opacity: 0;
-}
 .menuMain__icn--purple {
   color: purple;
   position: absolute;
