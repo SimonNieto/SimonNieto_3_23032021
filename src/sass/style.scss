@@ -86,10 +86,14 @@ a {
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
   }
 }
-
+.containeur {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
 .Fonctionnement {
-  padding: 2rem;
-  display: flex;
+  padding: 1rem;
+
   flex-wrap: wrap;
   max-width: 1280px;
   margin: auto;
@@ -98,43 +102,51 @@ a {
     margin-top: 0;
   }
   &__Ctnr {
-    min-width: 100%;
     counter-reset: compteListe;
+    padding: 1rem;
+    margin: 0;
+    position: relative;
     @media (min-width: 64rem) {
       display: flex;
+      min-width: 100%;
+      padding-left: 0;
+    }
+  }
+  &__Btn {
+    background-color: #f6f6f6;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem 0.5rem #00000020;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+
+    align-items: center;
+    position: relative;
+    @media (min-width: 64rem) {
+      margin-left: 20px;
+    }
+    .btnIcn {
+      padding: 1.4rem;
+    }
+    &::before {
+      counter-increment: compteListe 1;
+      content: counter(compteListe) " ";
+      background: #9356dc;
+      background: #9356dc;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: absolute;
+      left: -0.75rem;
     }
   }
 }
 
-.FonctionnementBtn {
-  background-color: #f6f6f6;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  box-shadow: 0.25rem 0.25rem 0.5rem #00000020;
-  border-radius: 1.25rem;
-  margin-bottom: 1rem;
-  align-items: center;
-  position: relative;
-  .btnIcn {
-    padding: 1rem;
-  }
-  &::before {
-    counter-increment: compteListe 1;
-    content: counter(compteListe) " ";
-    background: #9356dc;
-    background: #9356dc;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: absolute;
-    left: -0.75rem;
-  }
-}
 .restoSct {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
@@ -244,6 +256,11 @@ a {
   padding: 1rem;
   padding-top: 0;
   position: relative;
+  overflow: hidden;
+  &__submenu {
+    max-width: 100%;
+    overflow: hidden;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -305,14 +322,25 @@ a {
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
+  max-width: 100%;
+
   &__desc {
     flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   &__title {
     margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   &__subtitle {
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__price {
     display: flex;
@@ -330,6 +358,13 @@ a {
   }
   &__ctn {
     display: flex;
+  }
+  &__Icone {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+  }
+  &:hover &__Icone {
+    transform: rotate(0);
   }
   &__icn {
     color: white;

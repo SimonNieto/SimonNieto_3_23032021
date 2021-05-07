@@ -12,12 +12,12 @@
 
 <body>
 
-        <div class="loader">
-            <div class="loader__ctn">
-                <div class="loader__pulse"></div>
-            </div>
+    <div class="loader">
+        <div class="loader__ctn">
+            <div class="loader__pulse"></div>
         </div>
-      
+    </div>
+
     <!-- <-- header -->
     <header>
         <div class="header">
@@ -45,35 +45,38 @@
                 <p>Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
             </div>
             <div class="howto__btn">
-                <a class="howto__btn--Search">Explorer nos restaurants</a>
+                <a class="howto__btn--Search" href="#resto">Explorer nos restaurants</a>
             </div>
         </div>
-        <div class="Fonctionnement">
-            <h2>Fonctionnement</h2>
+        <section class="Fonctionnement">
+            <div class="containeur">
+                <h2>Fonctionnement</h2>
 
-            <div class="Fonctionnement__Ctnr">
-                <a class="FonctionnementBtn">
-                    <i class="fa-mobile-alt fas btnIcn" aria-hidden="true"></i>
-                    <p>Choisissez un restaurant</p>
+                <ol class="Fonctionnement__Ctnr">
+                    <li class="Fonctionnement__Btn">
+                        <i class="fa-mobile-alt fas btnIcn" aria-hidden="true"></i>
+                        <p>Choisissez un restaurant</p>
 
-                </a>
-                <a class="FonctionnementBtn">
-                    <i class="fa-list-ul fas btnIcn" aria-hidden="true"></i>
-                    <p>
-                        Composez votre menu
-                    </p>
-                </a>
-                <a class="FonctionnementBtn">
-                    <i class="fa-store fas btnIcn" aria-hidden="true"></i>
-                    <p>
-                        Dégustez un restaurant
-                    </p>
-                </a>
+                    </li>
+                    <li class="Fonctionnement__Btn">
+                        <i class="fa-list-ul fas btnIcn" aria-hidden="true"></i>
+                        <p>
+                            Composez votre menu
+                        </p>
+                    </li>
+                    <li class="Fonctionnement__Btn">
+                        <i class="fa-store fas btnIcn" aria-hidden="true"></i>
+                        <p>
+                            Dégustez un restaurant
+                        </p>
+                    </li>
+                </ol>
             </div>
-        </div>
+
+        </section>
         <section class="restoSct">
             <div class="restoSct__box">
-                <h2>Restaurants</h2>
+                <h2 id="resto">Restaurants</h2>
                 <div class="restoSct__Ctn">
 
 
@@ -173,7 +176,7 @@
                     <li class="footer__listElt">
                         <a class="footer__link" href="#">
                             <i class="fa-utensils fas footer__icon" aria-hidden="true">
-            
+
                             </i>Proposer un restaurant
                         </a>
                     </li>

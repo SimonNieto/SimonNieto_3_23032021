@@ -84,9 +84,14 @@ a {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
+.containeur {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
 .Fonctionnement {
-  padding: 2rem;
-  display: flex;
+  padding: 1rem;
   flex-wrap: wrap;
   max-width: 1280px;
   margin: auto;
@@ -96,16 +101,19 @@ a {
   margin-top: 0;
 }
 .Fonctionnement__Ctnr {
-  min-width: 100%;
   counter-reset: compteListe;
+  padding: 1rem;
+  margin: 0;
+  position: relative;
 }
 @media (min-width: 64rem) {
   .Fonctionnement__Ctnr {
     display: flex;
+    min-width: 100%;
+    padding-left: 0;
   }
 }
-
-.FonctionnementBtn {
+.Fonctionnement__Btn {
   background-color: #f6f6f6;
   width: 100%;
   display: flex;
@@ -116,10 +124,15 @@ a {
   align-items: center;
   position: relative;
 }
-.FonctionnementBtn .btnIcn {
-  padding: 1rem;
+@media (min-width: 64rem) {
+  .Fonctionnement__Btn {
+    margin-left: 20px;
+  }
 }
-.FonctionnementBtn::before {
+.Fonctionnement__Btn .btnIcn {
+  padding: 1.4rem;
+}
+.Fonctionnement__Btn::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356dc;
@@ -245,6 +258,11 @@ a {
   padding: 1rem;
   padding-top: 0;
   position: relative;
+  overflow: hidden;
+}
+.menuMain__submenu {
+  max-width: 100%;
+  overflow: hidden;
 }
 .menuMain__header {
   display: flex;
@@ -305,15 +323,25 @@ a {
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
+  max-width: 100%;
 }
 .menuChx__desc {
   flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menuChx__title {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menuChx__subtitle {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menuChx__price {
   display: flex;
@@ -331,6 +359,13 @@ a {
 }
 .menuChx__ctn {
   display: flex;
+}
+.menuChx__Icone {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.menuChx:hover .menuChx__Icone {
+  transform: rotate(0);
 }
 .menuChx__icn {
   color: white;
