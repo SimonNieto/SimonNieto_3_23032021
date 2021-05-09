@@ -241,10 +241,22 @@ a {
   margin: 0;
 }
 .footer__listElt {
-  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 64rem) {
+  .footer__listElt {
+    display: inline;
+  }
 }
 .footer__link {
   color: #fff;
+  margin: 0.2rem 0;
+}
+@media (min-width: 64rem) {
+  .footer__link {
+    margin-right: 114px;
+  }
 }
 .footer__icon {
   width: 1.2rem;

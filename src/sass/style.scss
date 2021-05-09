@@ -239,10 +239,18 @@ a {
     margin: 0;
   }
   &__listElt {
-    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 64rem) {
+      display: inline;
+    }
   }
   &__link {
     color: #fff;
+    margin: 0.2rem 0;
+    @media (min-width: 64rem) {
+      margin-right: 114px;
+    }
   }
   &__icon {
     width: 1.2rem;
