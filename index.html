@@ -1,30 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/7fa8c37fe8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<!-- <-- header --> 
+
+    <div class="loader">
+        <div class="loader__ctn">
+            <div class="loader__pulse"></div>
+        </div>
+    </div>
+
+    <!--  header -->
     <header>
+        <div class="header">
+            <img class="header__Logo" src="./src/logo/ohmyfood@2x.svg" alt="">
+        </div>
 
     </header>
-<!-- <-- header --> 
 
-<!-- <-- main --> 
+    <!--  header -->
+
+    <!--  main -->
     <main>
+        <div class="Findme">
+            <div class="Findme__containeur">
+                <div class="Findme__icn">
+                    <i class="fas fa-map-marker-alt "></i>
+                </div>
+                <span>Paris, Belleville</span>
+            </div>
+
+        </div>
+        <div class="howto">
+            <div>
+                <h1 class="howto__text">Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
+            </div>
+            <div class="howto__btn">
+                <a class="howto__btn--Search" href="#resto">Explorer nos restaurants</a>
+            </div>
+        </div>
+        <section class="Fonctionnement">
+            <div class="containeur">
+                <h2>Fonctionnement</h2>
+
+                <ol class="Fonctionnement__Ctnr">
+                    <li class="Fonctionnement__Btn">
+                        <i class="fa-mobile-alt fas btnIcn" aria-hidden="true"></i>
+                        <p>Choisissez un restaurant</p>
+
+                    </li>
+                    <li class="Fonctionnement__Btn">
+                        <i class="fa-list-ul fas btnIcn" aria-hidden="true"></i>
+                        <p>
+                            Composez votre menu
+                        </p>
+                    </li>
+                    <li class="Fonctionnement__Btn">
+                        <i class="fa-store fas btnIcn" aria-hidden="true"></i>
+                        <p>
+                            Dégustez un restaurant
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+        </section>
+        <section class="restoSct">
+            <div class="restoSct__box">
+                <h2 id="resto">Restaurants</h2>
+                <div class="restoSct__Ctn">
+
+
+                    <a class="restoCard" href="./menu3.html">
+                        <div>
+                            <img class="restoCard__img" src="./src/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                            <span class="restoCard__badge">Nouveau</span>
+                        </div>
+
+                        <div class="restoCard__desc">
+                            <div>
+                                <h3 class="restoCard__title">La palette du goût</h3>
+                                <p class="restoCard__subtitle">Ménilmontant</p>
+                            </div>
+
+                            <div class="restoCard__btn">
+                                <i class="fa-2x fa-heart far menuMain__icn" aria-hidden="true"></i>
+                                <i class="fa-2x fa-heart fas menuMain__icn--purple" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+
+                    </a>
+                    <a class="restoCard" href="./menu2.html">
+                        <div>
+                            <img class="restoCard__img" src="./src/img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                            <span class="restoCard__badge">Nouveau</span>
+                        </div>
+
+                        <div class="restoCard__desc">
+                            <div>
+                                <h3 class="restoCard__title">La note enchantée</h3>
+                                <p class="restoCard__subtitle">Charonne</p>
+                            </div>
+
+                            <div class="restoCard__btn">
+                                <i class="fa-2x fa-heart far menuMain__icn" aria-hidden="true"></i>
+                                <i class="fa-2x fa-heart fas menuMain__icn--purple" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+
+                    </a>
+                    <a class="restoCard" href="./menu1.html">
+                        <div>
+                            <img class="restoCard__img" src="./src/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="restoCard__desc">
+                            <div>
+                                <h3 class="restoCard__title">À la française</h3>
+                                <p class="restoCard__subtitle">Cité Rouge</p>
+                            </div>
+                            <div class="restoCard__btn">
+                                <i class="fa-2x fa-heart far menuMain__icn" aria-hidden="true"></i>
+                                <i class="fa-2x fa-heart fas menuMain__icn--purple" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+
+                    </a>
+                    <a class="restoCard" href="./menu4.html">
+                        <div>
+                            <img class="restoCard__img"
+                                src="./src/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                        </div>
+
+                        <div class="restoCard__desc">
+                            <div>
+                                <h3 class="restoCard__title">Le délice des sens</h3>
+                                <p class="restoCard__subtitle">Folie-Méricourt</p>
+
+                            </div>
+                            <div class="restoCard__btn">
+                                <i class="fa-2x fa-heart far menuMain__icn" aria-hidden="true"></i>
+                                <i class="fa-2x fa-heart fas menuMain__icn--purple" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
 
     </main>
-<!-- <-- main --> 
+    <!--  main -->
+<!--  footer -->
+<footer class="footer">
+    <div class="footer__ctn">
+        <p class="footer__logo">ohmyfood</p>
+        <div class="footer__btn">
+            <ul class="footer__list">
+                <li class="footer__listElt">
+                    <a class="footer__link" href="#">
+                        <i class="fa-utensils fas footer__icon" aria-hidden="true">
 
-<!-- <-- footer --> 
-    <footer>
+                        </i>Proposer un restaurant
+                    </a>
+                    <a class="footer__link" href="#">
+                        <i class="fa-hands-helping fas footer__icon" aria-hidden="true">
 
-    </footer>
-<!-- <-- footer --> 
+                        </i>Devenir partenaire
+                    </a>
+                    <a class="footer__link" href="#">Mentions légales
+                    </a>
+                    <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+<!-- footer -->
 
 </body>
+
 </html>
