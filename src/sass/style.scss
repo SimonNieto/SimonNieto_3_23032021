@@ -84,6 +84,10 @@ a {
     cursor: pointer;
     transition-duration: 0.25s;
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    &:hover {
+      background-color: white;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+    }
   }
 }
 .containeur {
@@ -120,9 +124,13 @@ a {
     box-shadow: 0.25rem 0.25rem 0.5rem #00000020;
     border-radius: 1.25rem;
     margin-bottom: 1rem;
-
     align-items: center;
     position: relative;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(255, 198, 228);
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+    }
     @media (min-width: 64rem) {
       margin-left: 20px;
     }
@@ -204,6 +212,17 @@ a {
     align-items: center;
     justify-content: center;
     padding-right: 1rem;
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+    }
   }
   &__badge {
     background-color: #99e2d0;
@@ -270,6 +289,9 @@ a {
   &__submenu {
     max-width: 100%;
     overflow: hidden;
+  }
+  &__carte {
+    font-family: Shrikhand, "cursive";
   }
   &__title {
     text-transform: uppercase;
@@ -387,12 +409,19 @@ a {
   &__Icone {
     transform: rotate(360deg);
     transition-duration: 0.5s;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    height: 1.6rem;
+    width: 1.6rem;
   }
   &:hover &__Icone {
     transform: rotate(0);
   }
   &__icn {
-    color: white;
+    color: #99e2d0;
   }
   &:hover &__valide {
     margin-right: -1rem;
